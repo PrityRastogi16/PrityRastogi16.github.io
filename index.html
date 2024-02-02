@@ -19,7 +19,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <div class="logo"><a href="#">P<span>rity</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -194,7 +194,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column right">
+                <!-- <div class="column right">
                     <div class="text">Message me</div>
                     <form action="#">
                         <div class="fields">
@@ -215,7 +215,31 @@
                             <button type="submit">Send message</button>
                         </div>
                     </form>
-                </div>
+                </div> -->
+            <!-- </div> -->
+            <div class="column right">
+                <div class="text">Message me</div>
+                <form action="https://formspree.io/f/xgegaoqj" method="POST" >
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="field Email">
+                            <input type="email" name="email" placeholder="Your email address" required>
+                        </div>
+
+                    </div>
+                    <div class="field ">
+                        <input type="number" name="number" placeholder="Your mobile number" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea name="message" cols="30" rows="10" placeholder="Type your message..."
+                            required></textarea>
+                    </div>
+                    <div class="button ">
+                        <button type="submit">Send message</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

@@ -1,5 +1,6 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nabla&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -118,7 +119,34 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+.navbar .logo {
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Nabla', system-ui;
+    font-size: 36px; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    text-transform: uppercase; /* Uppercase for consistency */
+    animation: borderAnimation 1s linear infinite; /* Animation for color change */
+}
+
+@keyframes rainbow {
+    0% { color: #ff5733; } /* Start color */
+    25% { color: #ff8c00; } /* Second color */
+    50% { color: #1e90ff; } /* Third color */
+    75% { color: #8a2be2; } /* Fourth color */
+    100% { color: #32cd32; } /* Last color */
+}
+.navbar .logo a {
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar .logo a span {
+    color: #ff5733; /* Initial color for "rity" part */
+}
+
+.navbar .logo a:hover {
+    color: #ff8c00; /* Change color on hover for a dynamic effect */
+}
+/* .navbar .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
@@ -129,7 +157,7 @@ section .title::after{
 }
 .navbar.sticky .logo a span{
     color: #fff;
-}
+} */
 .navbar .menu li{
     list-style: none;
     display: inline-block;
