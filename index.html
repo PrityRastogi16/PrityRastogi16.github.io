@@ -40,7 +40,7 @@
         <div class="max-width">
             <div class="home-content">
                 <!-- <div class="text-1">Hello, my name is</div> -->
-                <div class="text-2">Hi, I'm Prity Rastogi</div>
+                <div class="text-2" id="user-detail-name">Hi, I'm Prity Rastogi</div>
                 <div class="text-3">A <span class="typing"></span></div>
                 <img class="image-sidep" src="https://static.vecteezy.com/system/resources/thumbnails/011/381/947/small/young-man-studying-for-university-test-3d-character-illustration-png.png" alt="">
             </div>
@@ -56,10 +56,10 @@
                     <img class="imagemy" src="./images/myimag.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Prity Rastogi and I'm a <span class="typing-2"></span></div>
+                    <div class="text" [id="user-detail-intro">I'm Prity Rastogi and I'm a <span class="typing-2"></span></div>
                     <p>Enthusiastic backend developer with over 100+ hours of coding experience and a strong background in data structures and algorithms (100+ hours). Skilled in back-end development, utilizing technologies such as Node.js, JavaScript, ExpressJS, and MongoDB. Successfully collaborated on projects with teams. Highly disciplined, motivated, and a problem solver. Committed to continuous learning and staying at the forefront of evolving technologies.
                     </p>
-                    <a href="./images/Prity Rastogi-fw28_163-Node JS Developer (1).pdf" download>Download CV</a>
+                    <a href="./images/Prity Rastogi-fw28_163-Node JS Developer (1).pdf"  class="home-img" download>Download CV</a>
                 </div>
             </div>
         </div>
@@ -79,17 +79,17 @@
           <h2 class="text-white main-font">Technical <span class="text-blue main-font">Skills</span></h2>
           <ul class="skills-icons">
             
-            <li><span class="iconify" data-icon="logos:javascript" data-inline="false" data-width="90px" data-height="90px"></span><span>JavaScript</span></li>       
-            <li><span class="iconify" data-icon="logos:nodejs-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Node.js</span></li>
-            <li><span class="iconify" data-icon="logos:java" data-inline="false" data-width="90px" data-height="90px"></span><span>Java</span></li>
-            <li><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="90px" data-height="90px"></span><span>HTML</span></li>
-            <li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="90px" data-height="90px"></span><span>CSS</span></li>
-            <li><span class="iconify" data-icon="logos:git-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Git</span></li>
-            <li><span class="iconify" data-icon="logos:bootstrap" data-inline="false" data-width="90px" data-height="90px"></span><span>Bootstrap</span></li>
-            <li><span class="iconify" data-icon="logos:mysql" data-inline="false" data-width="90px" data-height="90px"></span><span>MySQL</span>         
-            <li><span class="iconify" data-icon="logos:mongodb" data-inline="false" data-width="90px" data-height="90px"></span>
-                <span class="text-center">MongoDB</span></li>  
-            <li><span class="iconify" data-icon="logos:redis" data-inline="false" data-width="90px" data-height="90px"></span><span>Redis</span> 
+            <li class="skills-card"><span class="iconify skills-card-img" data-icon="logos:javascript" data-inline="false" data-width="90px" data-height="90px"></span><span class="skills-card-name">JavaScript</span></li>       
+            <li class="skills-card"><span class="iconify skills-card-img" data-icon="logos:nodejs-icon" data-inline="false" data-width="90px" data-height="90px"></span><span class="skills-card-name">Node.js</span></li>
+            <li class="skills-card"><span class="iconify skills-card-img" data-icon="logos:java" data-inline="false" data-width="90px" data-height="90px"></span><span class="skills-card-name">Java</span></li>
+            <li class="skills-card"><span class="iconify skills-card-img" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="90px" data-height="90px"></span><span class="skills-card-name">HTML</span></li>
+            <li class="skills-card"><span class="iconify skills-card-img" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="90px" data-height="90px"></span><span class="skills-card-name">CSS</span></li>
+            <li class="skills-card"><span class="iconify skills-card-img" data-icon="logos:git-icon" data-inline="false" data-width="90px" data-height="90px"></span><span class="skills-card-name">Git</span></li>
+            <li class="skills-card"><span class="iconify skills-card-img" data-icon="logos:bootstrap" data-inline="false" data-width="90px" data-height="90px"></span><span class="skills-card-name">Bootstrap</span></li>
+            <li class="skills-card"><span class="iconify skills-card-img" data-icon="logos:mysql" data-inline="false" data-width="90px" data-height="90px"></span><span class="skills-card-name">MySQL</span>         
+            <li class="skills-card"><span class="iconify skills-card-img" data-icon="logos:mongodb" data-inline="false" data-width="90px" data-height="90px"></span>
+                <span class="skills-card-name text-center">MongoDB</span></li>  
+            <li class="skills-card"><span class="iconify skills-card-img" data-icon="logos:redis" data-inline="false" data-width="90px" data-height="90px"></span><span class="skills-card-name">Redis</span> 
           </ul>
         </div>
   
@@ -104,39 +104,39 @@
         <div class="max-width">
             <h2 class="title">My Projects</h2>
             <div class="carousel owl-carousel">
-                <div class="card">
+                <div class="card project-card">
                     <div class="box">
                         <img src="images/traker1].png" alt=""TrackerJet>
-                        <div class="text">TrackerJet</div>
-                        <p>It is a responsive study tracking website designed to assist students in managing their assignments effectively. It offers an intuitive platform for improved time management.</p>
+                        <div class="text project-title">TrackerJet</div>
+                        <p class="project-description"></p>It is a responsive study tracking website designed to assist students in managing their assignments effectively. It offers an intuitive platform for improved time management.</p>
                         <div class="button-container">
-                            <a href="https://github.com/PrityRastogi16/TrackerJet" class="gitBtn btn1"><button>Github</button></a>
-                            <a href="https://tracker-jet-app.vercel.app/" class="gitBtn btn2"><button>Go Live</button></a>
+                            <a href="https://github.com/PrityRastogi16/TrackerJet" class="project-github-link gitBtn btn1"><button>Github</button></a>
+                            <a href="https://tracker-jet-app.vercel.app/" class="project-deployed-link gitBtn btn2"><button>Go Live</button></a>
                         </div>
                     </div>
                 </div>
                
-                <div class="card">
+                <div class="card project-card">
                     <div class="box">
                         <img src="images/Stayhub2.png" alt=""TrackerJet>
-                        <div class="text">StayHub</div>
-                        <p>It is a user-centric hotel booking platform which committed to providing a delightful and <br>convenient experience for travelers exploring the beauty of <br>Switzerland.</p>
+                        <div class="text project-title">StayHub</div>
+                        <p class="project-description">It is a user-centric hotel booking platform which committed to providing a delightful and <br>convenient experience for travelers exploring the beauty of <br>Switzerland.</p>
                         <div class="button-container">
-                            <a href="https://github.com/PrityRastogi16/StayHub" class="gitBtn btn1"><button>Github</button></a>
-                            <a href="https://stayhub-com.netlify.app/" class="gitBtn btn2"><button>Go Live</button></a>
+                            <a href="https://github.com/PrityRastogi16/StayHub" class="project-github-link gitBtn btn1"><button>Github</button></a>
+                            <a href="https://stayhub-com.netlify.app/" class="project-deployed-link gitBtn btn2"><button>Go Live</button></a>
                         </div>
                     </div>
                 </div>
                
 
-                <div class="card">
+                <div class="card project-card">
                     <div class="box">
                         <img src="images/tictak2.png" alt=""TrackerJet>
-                        <div class="text">Tic-Tac-Toe</div>
-                        <p>This is a simple implementation of the classic Tic Tac Toe game. The game provides a fun and interactive experience for players of all ages, allowing them to enjoy the timeless challenges</p>
+                        <div class="text project-title">Tic-Tac-Toe</div>
+                        <p class="project-description">This is a simple implementation of the classic Tic Tac Toe game. The game provides a fun and interactive experience for players of all ages, allowing them to enjoy the timeless challenges</p>
                         <div class="button-container">
-                            <a href="https://github.com/PrityRastogi16/Tic-Tac_toe-Game" class="gitBtn btn1"><button>Github</button></a>
-                            <a href="https://imaginative-gumdrop-f1e469.netlify.app/" class="gitBtn btn2"><button>Go Live</button></a>
+                            <a href="https://github.com/PrityRastogi16/Tic-Tac_toe-Game" class="project-github-link gitBtn btn1"><button>Github</button></a>
+                            <a href="https://imaginative-gumdrop-f1e469.netlify.app/" class="project-deployed-link gitBtn btn2"><button>Go Live</button></a>
                         </div>
                     </div>
                 </div>
@@ -153,9 +153,10 @@
 
         <p align="center">
             <a href="https://github.com/PrityRastogi16" >
-            <img class="image11" src="https://github-readme-streak-stats.herokuapp.com/?user=PrityRastogi16&theme=dark&hide_border=false" />
-              <img style="height: 195px;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PrityRastogi16&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact" /> <br>
-              <div class="gitcard"><img style="height: 150px;" src="https://ghchart.rshah.org/PrityRastogi16" /></div>
+            <img class="image11" id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=PrityRastogi16&theme=dark&hide_border=false" />
+              <img style="height: 195px;" id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PrityRastogi16&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact" /> <br>
+              <div class="gitcard"><img style="height: 150px;" id="github-stats-card" src="https://ghchart.rshah.org/PrityRastogi16" /></div>
               
             </a>
           </p>
@@ -188,10 +189,18 @@
                             </div>
                         </div>
                         <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div class="info">
+                                <!-- <div class="head"></div> -->
+                                <div class="sub-title" id="contact-phone"
+                                >9129268646</div>
+                            </div>
+                        </div>
+                        <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">prityss7991@gmail.com</div>
+                                <div class="sub-title" id="contact-email">prityss7991@gmail.com</div>
                             </div>
                         </div>
                     </div>
@@ -247,13 +256,13 @@
     </section>
 <!-- Linkss -->
 <div class="social-buttons">
-    <div class="buttonlogos" id="linkedin">
+    <div class="buttonlogos" id="contact-linkedin">
       <a href="https://www.linkedin.com/in/prity-rastogi-693074249/">
         <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn" class="logoss">
         <span class="label">LinkedIn</span>
       </a>
     </div>
-    <div class="buttonlogos" id="github">
+    <div class="buttonlogos" id="contact-github">
       <a href="https://github.com/PrityRastogi16">
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="logoss">
         <span class="label">GitHub</span>
