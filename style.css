@@ -1,11 +1,18 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+}
+.logooo{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 36px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #8AC01D;
 }
 html{
     scroll-behavior: smooth;
@@ -223,9 +230,11 @@ section .title::after{
     position: relative;
 }
 .image-sidep{
-    margin-left: 20%;
-    height: 85%;
-    width: 65%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -150px;
+    height: 100%;
+    width: 95%;
 }
 .home-content{
     margin-left: 23%;
@@ -474,7 +483,20 @@ section .title::after{
     margin-left: 20%;
 }
 .image11{
-    max-height: 200px;
+    max-height: 150px;
+    margin-left: 1%;
+    border-radius: 10px;
+}
+.image11:hover {
+    transform: scale(1.05);
+}
+.gitCalender:hover{
+    transform: scale(1.05);
+}
+
+.gitdiv{
+    margin-left: 14%;
+    margin-top: 1%;
 }
 
 .gitcard img {
@@ -887,10 +909,10 @@ footer span a:hover{
   }
   .skills1 .seperator-skew-bottom {
     position: absolute;
-    bottom: -0.5px;
+    bottom: -5px;
     left: 0;
     right: 0;
-    height: 150px;
+    /* height: 150px; */
     width: 120%;
     overflow: hidden;
   }
