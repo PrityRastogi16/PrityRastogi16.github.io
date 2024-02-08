@@ -25,9 +25,9 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "smooth");
     });
     // toggle menu/navbar script
-    $('.menu-btn').click(function(){
+    $('.nav-link').click(function(){
         $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+        $('.nav-link i').toggleClass("active");
     });
     // typing text animation script
     var typed = new Typed(".typing", {
