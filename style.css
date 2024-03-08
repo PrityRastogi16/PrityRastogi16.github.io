@@ -17,6 +17,22 @@
 html{
     scroll-behavior: smooth;
 }
+.hr {
+    border: none;
+    height: 10px;
+    background: linear-gradient(to right, #19678e, #8AC01D, #19678e);
+    margin: 20px 0;
+    animation: wave 10s infinite linear;
+}
+
+/* @keyframes wave {
+    0%{
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+} */
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -476,7 +492,7 @@ section .title::after{
 }
 .gitcard {
     margin-top: 30px;
-    max-width: 60%;
+    max-width: 65%;
     height: 45%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -491,8 +507,11 @@ section .title::after{
 .image11:hover {
     transform: scale(1.05);
 }
-.gitCalender:hover{
-    transform: scale(1.05);
+/* .gitCalender:hover{
+    transform: scale(.5);
+} */
+.gitCalender{
+    margin-left: 5%;
 }
 
 .gitdiv{
@@ -520,6 +539,11 @@ section .title::after{
         height: auto;
         margin-left: 10%;
     }
+    /* .gitCalender{
+        width: auto;
+        height: 45%;
+
+    } */
     .image11 {
         max-width: 80%; 
         height: auto;
