@@ -578,10 +578,11 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
+    border-color: #fff;
     height: 170px;
     width: 320px;
-    object-fit: cover;
     border-radius: 5px;
+    object-fit: cover;
     border: 1px solid #0E4166;
     transition: all 0.3s ease;
 }
